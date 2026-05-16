@@ -1,0 +1,303 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard - JNTU EduAssist{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>ADMIN DASHBOARD</h1>
+        <p>Manage users and forum moderation</p>
+    </div>
+
+    <div class="admin-container">
+        <!-- Current Admins -->
+        <div class="admin-section">
+            <h3>CURRENT ADMINS</h3>
+            <div class="admin-list">
+                {% for admin in admins %}
+                <div class="admin-item">
+                    <div class="admin-info">
+                        <span class="admin-avatar">{{ admin.username[0]|upper }}</span>
+                        <div>
+                            <strong>{{ admin.full_name or admin.username }}</strong>
+                            <p class="admin-email">{{ admin.email }}</p>
+                        </div>
+                    </div>
+                    {% if admin.id != user.id %}
+                    <button class="btn btn-secondary demote-btn" data-email="{{ admin.email }}">DEMOTE</button>
+                    {% else %}
+                    <span class="you-badge">YOU</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Promote User -->
+        <div class="admin-section">
+            <h3>PROMOTE USER TO ADMIN</h3>
+            <p class="section-desc">Enter the email address of the user you want to promote to admin role.</p>
+            <form id="promoteForm" class="promote-form">
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="user@example.com" class="form-input" required>
+                    <button type="submit" class="btn btn-primary">PROMOTE</button>
+                </div>
+            </form>
+            <div id="promoteMessage" class="message"></div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="admin-section">
+            <h3>QUICK LINKS</h3>
+            <div class="quick-links">
+                <a href="{{ url_for('forum') }}" class="quick-link">📝 Forum</a>
+                <a href="{{ url_for('my_profile') }}" class="quick-link">👤 My Profile</a>
+                <a href="{{ url_for('home') }}" class="quick-link">🏠 Home</a>
+            </div>
+        </div>
+
+        <!-- Admin Info -->
+        <div class="admin-info-box">
+            <h4>Admin Privileges</h4>
+            <ul>
+                <li>Delete any post or comment</li>
+                <li>Promote/demote other users</li>
+                <li>Access admin dashboard</li>
+                <li>Moderate forum content</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .admin-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .admin-section {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .admin-section h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 1rem;
+    }
+
+    .section-desc {
+        font-size: 13px;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+    }
+
+    .admin-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .admin-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border);
+    }
+
+    .admin-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .admin-avatar {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .admin-email {
+        font-size: 12px;
+        color: var(--text-muted);
+        margin-top: 2px;
+    }
+
+    .you-badge {
+        background: var(--accent);
+        color: var(--bg-secondary);
+        padding: 4px 10px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+
+    .promote-form .form-row {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .promote-form .form-input {
+        flex: 1;
+    }
+
+    .message {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        font-size: 13px;
+        display: none;
+    }
+
+    .message.success {
+        background: #f0fdf4;
+        border: 1px solid #22c55e;
+        color: #166534;
+        display: block;
+    }
+
+    .message.error {
+        background: #fef2f2;
+        border: 1px solid #ef4444;
+        color: #991b1b;
+        display: block;
+    }
+
+    [data-theme="dark"] .message.success {
+        background: #14532d;
+        color: #86efac;
+    }
+
+    [data-theme="dark"] .message.error {
+        background: #7f1d1d;
+        color: #fca5a5;
+    }
+
+    .quick-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .quick-link {
+        padding: 1rem 1.5rem;
+        background: var(--bg-primary);
+        border: 1px solid var(--border);
+        text-decoration: none;
+        color: var(--text-primary);
+        font-size: 14px;
+        transition: all 0.2s;
+    }
+
+    .quick-link:hover {
+        background: var(--accent);
+        color: var(--bg-secondary);
+        border-color: var(--accent);
+    }
+
+    .admin-info-box {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        padding: 1.5rem;
+    }
+
+    .admin-info-box h4 {
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .admin-info-box ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .admin-info-box li {
+        font-size: 13px;
+        color: var(--text-secondary);
+        padding: 0.5rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .admin-info-box li:last-child {
+        border-bottom: none;
+    }
+
+    .admin-info-box li::before {
+        content: "✓";
+        margin-right: 0.5rem;
+        color: #22c55e;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const promoteForm = document.getElementById('promoteForm');
+        const messageDiv = document.getElementById('promoteMessage');
+
+        promoteForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            try {
+                const response = await fetch('/api/admin/promote', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                messageDiv.textContent = data.message;
+                messageDiv.className = 'message ' + (data.success ? 'success' : 'error');
+
+                if (data.success) {
+                    setTimeout(() => window.location.reload(), 1500);
+                }
+            } catch (error) {
+                messageDiv.textContent = 'Error promoting user';
+                messageDiv.className = 'message error';
+            }
+        });
+
+        // Demote buttons
+        document.querySelectorAll('.demote-btn').forEach(btn => {
+            btn.addEventListener('click', async function () {
+                const email = this.dataset.email;
+
+                if (!confirm(`Demote ${email} from admin?`)) return;
+
+                const formData = new FormData();
+                formData.append('email', email);
+
+                try {
+                    const response = await fetch('/api/admin/demote', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert(data.message);
+                    }
+                } catch (error) {
+                    alert('Error demoting user');
+                }
+            });
+        });
+    });
+</script>
+{% endblock %}

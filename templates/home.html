@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}{{ "Home"|translate }} - JNTU EduAssist AI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-label">{{ "EDUCATIONAL PLATFORM"|translate }}</div>
+        <h1 class="hero-title">JNTU EduAssist AI</h1>
+        <p class="hero-description">
+            {{ "Your Multilingual Educational Assistant for JNTU Students. Advanced AI-powered platform designed to
+            provide instant answers, study materials, and comprehensive academic support."|translate }}
+        </p>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">{{ "YOUR LEARNING DASHBOARD"|translate }}</h2>
+            <span class="section-number">01</span>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Ask Questions -->
+            <a href="{{ url_for('ask') }}" class="app-card">
+                <div class="app-card-label">{{ "SERVICE"|translate }} 01</div>
+                <h3>{{ "Ask Questions"|translate }}</h3>
+                <p>{{ "Get instant answers to your coursework with AI-powered assistance built on semantic search
+                    technology."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+
+            <!-- Check Results -->
+            <a href="{{ url_for('results') }}" class="app-card">
+                <span class="app-card-badge">{{ "NEW"|translate }}</span>
+                <div class="app-card-label">{{ "SERVICE"|translate }} 02</div>
+                <h3>{{ "Check Results"|translate }}</h3>
+                <p>{{ "Fetch your academic results directly from JNTUH servers quickly and easily."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+
+            <!-- Practice Questions -->
+            <a href="{{ url_for('practice') }}" class="app-card">
+                <div class="app-card-label">{{ "SERVICE"|translate }} 03</div>
+                <h3>{{ "Practice Questions"|translate }}</h3>
+                <p>{{ "Generate practice questions to test your knowledge across all subjects."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+
+            <!-- Discussion Forum -->
+            <a href="{{ url_for('forum') }}" class="app-card">
+                {% if not user %}<span class="app-card-badge">{{ "LOGIN"|translate }}</span>{% endif %}
+                <div class="app-card-label">{{ "SERVICE"|translate }} 04</div>
+                <h3>{{ "Discussion Forum"|translate }}</h3>
+                <p>{{ "Connect with fellow students and teachers to discuss academics in a collaborative
+                    environment."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+
+            <!-- Academic Calendars -->
+            <a href="{{ url_for('calendars') }}" class="app-card">
+                <div class="app-card-label">{{ "SERVICE"|translate }} 05</div>
+                <h3>{{ "Academic Calendars"|translate }}</h3>
+                <p>{{ "Download official JNTUH academic calendars for all programs and regulations."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+
+            <!-- Syllabus Download -->
+            <a href="{{ url_for('syllabus') }}" class="app-card">
+                <div class="app-card-label">{{ "SERVICE"|translate }} 06</div>
+                <h3>{{ "Syllabus Download"|translate }}</h3>
+                <p>{{ "Access and download complete syllabus for all courses and specializations."|translate }}</p>
+                <div class="app-card-link">{{ "OPEN"|translate }} →</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Language Preference Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">LANGUAGE PREFERENCE</h2>
+            <span class="section-number">02</span>
+        </div>
+
+        <div class="about-section" style="text-align: center; padding: 2rem;">
+            <p style="font-size: 16px; margin-bottom: 1rem;">🌐 <strong>Translate this page to your language</strong>
+            </p>
+            <p style="color: var(--text-secondary);">Use the Google Translate dropdown in the navigation bar (top right)
+                to translate this entire website into Telugu, Hindi, Urdu, Tamil, and more!</p>
+        </div>
+    </section>
+
+    <!-- Quick Tips Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">{{ "QUICK TIPS"|translate }}</h2>
+            <span class="section-number">03</span>
+        </div>
+
+        <div class="tips-grid">
+            <div class="tip-card">
+                <div class="tip-number">{{ "TIP"|translate }} 01</div>
+                <p class="tip-text">{{ "Select your course details first for context-aware responses."|translate }}</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">{{ "TIP"|translate }} 02</div>
+                <p class="tip-text">{{ "Use the Results tab to check grades directly from servers."|translate }}</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">{{ "TIP"|translate }} 03</div>
+                <p class="tip-text">{{ "Use specific keywords for better and more accurate answers."|translate }}</p>
+            </div>
+            <div class="tip-card">
+                <div class="tip-number">{{ "TIP"|translate }} 04</div>
+                <p class="tip-text">{{ "Clear chat history anytime to start a fresh conversation."|translate }}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="about-section">
+            <h3 class="about-title">{{ "ABOUT"|translate }}</h3>
+            <ul class="about-list">
+                <li>{{ "JNTU EduAssist Platform"|translate }}</li>
+                <li>{{ "AI Helper 2025.01 Release"|translate }}</li>
+                <li>{{ "Designed with AI-powered semantic search"|translate }}</li>
+                <li>{{ "Academic results lookup integration"|translate }}</li>
+                <li>{{ "Practice question generator"|translate }}</li>
+                <li>{{ "Q&A assistance system"|translate }}</li>
+            </ul>
+        </div>
+    </section>
+</div>
+{% endblock %}

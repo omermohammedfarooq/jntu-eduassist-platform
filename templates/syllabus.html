@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+
+{% block title %}Syllabus Download - JNTU EduAssist{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>SYLLABUS DOWNLOAD</h1>
+        <p>Download complete syllabus PDFs for all courses and specializations</p>
+    </div>
+
+    <div class="syllabus-container">
+        <div class="syllabus-form">
+            <h3>SELECT SYLLABUS</h3>
+
+            <form id="syllabusForm" class="form-grid">
+                <div class="form-group">
+                    <label for="degree" class="form-label">DEGREE</label>
+                    <select id="degree" name="degree" class="form-select" required>
+                        <option value="">Select Degree</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="bpharmacy">B.Pharmacy</option>
+                        <option value="mba">MBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="mpharmacy">M.Pharmacy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="regulation" class="form-label">REGULATION</label>
+                    <select id="regulation" name="regulation" class="form-select" required disabled>
+                        <option value="">Select Regulation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="year" class="form-label">YEAR</label>
+                    <select id="year" name="year" class="form-select" required disabled>
+                        <option value="">Select Year</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="branch" class="form-label">BRANCH</label>
+                    <select id="branch" name="branch" class="form-select" required disabled>
+                        <option value="">Select Branch</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="downloadSyllabus()" class="btn btn-primary btn-full" id="downloadBtn"
+                    disabled>DOWNLOAD SYLLABUS PDF</button>
+            </form>
+
+            <div class="info-note">
+                <strong>Note:</strong> Direct PDF downloads from official JNTUH sources.
+                Currently available: <strong>B.Tech R22 (Years I & II), B.Tech R18 (All Years), B.Pharmacy R22, MBA R22,
+                    MCA R22, M.Pharmacy R22</strong>.
+            </div>
+        </div>
+
+        <div class="quick-access">
+            <h3>QUICK ACCESS</h3>
+            <div class="access-grid">
+                <div class="access-card">
+                    <div class="access-label">OFFICIAL PORTAL</div>
+                    <a href="https://studentservices.jntuh.ac.in/oss/syllabus.html?type=syllabus" target="_blank"
+                        class="btn btn-secondary">
+                        VISIT JNTUH SYLLABUS
+                    </a>
+                </div>
+                <div class="access-card">
+                    <div class="access-label">PREVIOUS QUESTION PAPERS</div>
+                    <a href="https://studentservices.jntuh.ac.in" target="_blank" class="btn btn-secondary">
+                        VISIT PORTAL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .syllabus-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .syllabus-form,
+    .quick-access {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .syllabus-form h3,
+    .quick-access h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .btn-full {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+    }
+
+    .info-note {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: var(--bg-primary);
+        border-left: 3px solid var(--border);
+        font-size: 13px;
+        color: var(--text-secondary);
+    }
+
+    .info-note a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .info-note a:hover {
+        text-decoration: underline;
+    }
+
+    .access-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .access-card {
+        padding: 1.5rem;
+        border: 1px solid var(--border);
+        background: var(--bg-primary);
+    }
+
+    .access-label {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+    }
+
+    .access-card .btn {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+
+        .form-grid,
+        .access-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    // Cascading dropdown logic
+    const syllabusData = {
+        "btech": {
+            "name": "B.Tech",
+            "regulations": {
+                "r22": { "name": "R22", "years": ["1", "2"] },
+                "r18": { "name": "R18", "years": ["1", "2", "3", "4"] }
+            }
+        },
+        "bpharmacy": {
+            "name": "B.Pharmacy",
+            "regulations": {
+                "r22": { "name": "R22", "years": ["1", "2"] }
+            }
+        },
+        "mba": {
+            "name": "MBA",
+            "regulations": {
+                "r22": { "name": "R22", "years": ["1"] }
+            }
+        },
+        "mca": {
+            "name": "MCA",
+            "regulations": {
+                "r22": { "name": "R22", "years": ["1"] }
+            }
+        },
+        "mpharmacy": {
+            "name": "M.Pharmacy",
+            "regulations": {
+                "r22": { "name": "R22", "years": ["1"] }
+            }
+        }
+    };
+
+    let pdfUrl = null;
+
+    // Degree change handler
+    document.getElementById('degree').addEventListener('change', function () {
+        const degree = this.value;
+        const regulationSelect = document.getElementById('regulation');
+        const yearSelect = document.getElementById('year');
+        const branchSelect = document.getElementById('branch');
+
+        // Reset dependent dropdowns
+        regulationSelect.innerHTML = '<option value="">Select Regulation</option>';
+        yearSelect.innerHTML = '<option value="">Select Year</option>';
+        branchSelect.innerHTML = '<option value="">Select Branch</option>';
+        regulationSelect.disabled = true;
+        yearSelect.disabled = true;
+        branchSelect.disabled = true;
+        document.getElementById('downloadBtn').disabled = true;
+        pdfUrl = null;
+
+        if (degree && syllabusData[degree]) {
+            const regulations = syllabusData[degree].regulations;
+            for (const [key, value] of Object.entries(regulations)) {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = value.name;
+                regulationSelect.appendChild(option);
+            }
+            regulationSelect.disabled = false;
+        }
+    });
+
+    // Regulation change handler
+    document.getElementById('regulation').addEventListener('change', function () {
+        const degree = document.getElementById('degree').value;
+        const regulation = this.value;
+        const yearSelect = document.getElementById('year');
+        const branchSelect = document.getElementById('branch');
+
+        // Reset dependent dropdowns
+        yearSelect.innerHTML = '<option value="">Select Year</option>';
+        branchSelect.innerHTML = '<option value="">Select Branch</option>';
+        yearSelect.disabled = true;
+        branchSelect.disabled = true;
+        document.getElementById('downloadBtn').disabled = true;
+        pdfUrl = null;
+
+        if (degree && regulation && syllabusData[degree].regulations[regulation]) {
+            const years = syllabusData[degree].regulations[regulation].years;
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = `${year}${getOrdinalSuffix(year)} Year`;
+                yearSelect.appendChild(option);
+            });
+            yearSelect.disabled = false;
+        }
+    });
+
+    // Year change handler - fetch branches from backend
+    document.getElementById('year').addEventListener('change', async function () {
+        const degree = document.getElementById('degree').value;
+        const regulation = document.getElementById('regulation').value;
+        const year = this.value;
+        const branchSelect = document.getElementById('branch');
+
+        branchSelect.innerHTML = '<option value="">Loading...</option>';
+        branchSelect.disabled = true;
+        document.getElementById('downloadBtn').disabled = true;
+        pdfUrl = null;
+
+        if (degree && regulation && year) {
+            try {
+                const formData = new FormData();
+                formData.append('degree', degree);
+                formData.append('regulation', regulation);
+                formData.append('year', year);
+
+                const response = await fetch('/api/get-branches', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                branchSelect.innerHTML = '<option value="">Select Branch</option>';
+
+                if (data.success && data.branches && data.branches.length > 0) {
+                    data.branches.forEach(branch => {
+                        const option = document.createElement('option');
+                        option.value = branch.code;
+                        option.textContent = branch.name;
+                        branchSelect.appendChild(option);
+                    });
+                    branchSelect.disabled = false;
+                } else if (data.error) {
+                    branchSelect.innerHTML = `<option value="">${data.error}</option>`;
+                } else {
+                    branchSelect.innerHTML = '<option value="">No branches found</option>';
+                }
+            } catch (error) {
+                branchSelect.innerHTML = '<option value="">Error loading branches</option>';
+                console.error('Error fetching branches:', error);
+            }
+        }
+    });
+
+    // Branch change handler - get PDF URL
+    document.getElementById('branch').addEventListener('change', async function () {
+        const degree = document.getElementById('degree').value;
+        const regulation = document.getElementById('regulation').value;
+        const year = document.getElementById('year').value;
+        const branch = this.value;
+        const downloadBtn = document.getElementById('downloadBtn');
+
+        downloadBtn.disabled = true;
+        pdfUrl = null;
+
+        if (degree && regulation && year && branch) {
+            try {
+                downloadBtn.textContent = 'LOADING...';
+
+                const formData = new FormData();
+                formData.append('degree', degree);
+                formData.append('regulation', regulation);
+                formData.append('year', year);
+                formData.append('branch', branch);
+
+                const response = await fetch('/api/get-syllabus-pdf', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await response.json();
+
+                if (data.success && data.pdf && data.pdf.url) {
+                    pdfUrl = data.pdf.url;
+                    downloadBtn.disabled = false;
+                    downloadBtn.textContent = 'DOWNLOAD SYLLABUS PDF';
+                } else {
+                    downloadBtn.textContent = 'ERROR - TRY AGAIN';
+                    setTimeout(() => {
+                        downloadBtn.textContent = 'DOWNLOAD SYLLABUS PDF';
+                    }, 2000);
+                }
+            } catch (error) {
+                downloadBtn.textContent = 'ERROR - TRY AGAIN';
+                setTimeout(() => {
+                    downloadBtn.textContent = 'DOWNLOAD SYLLABUS PDF';
+                }, 2000);
+                console.error('Error fetching PDF:', error);
+            }
+        }
+    });
+
+    function downloadSyllabus() {
+        if (pdfUrl) {
+            window.open(pdfUrl, '_blank', 'noopener,noreferrer');
+        }
+    }
+
+    function getOrdinalSuffix(num) {
+        const j = num % 10;
+        const k = num % 100;
+        if (j == 1 && k != 11) return "st";
+        if (j == 2 && k != 12) return "nd";
+        if (j == 3 && k != 13) return "rd";
+        return "th";
+    }
+</script>
+{% endblock %}

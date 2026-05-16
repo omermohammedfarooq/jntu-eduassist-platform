@@ -1,0 +1,189 @@
+{% extends "base.html" %}
+
+{% block title %}Academic Calendars - JNTU EduAssist{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>ACADEMIC CALENDARS</h1>
+        <p>Download official JNTUH academic calendars for all programs and regulations</p>
+    </div>
+
+    <div class="calendars-container">
+        <div class="calendar-form">
+            <h3>SELECT CALENDAR</h3>
+
+            <form id="calendarForm" class="form-grid">
+                <div class="form-group">
+                    <label for="year" class="form-label">ACADEMIC YEAR</label>
+                    <select id="year" name="year" class="form-select" required>
+                        <option value="">Select Year</option>
+                        <option value="2025-2026">2025-2026</option>
+                        <option value="2024-2025">2024-2025</option>
+                        <option value="2023-2024">2023-2024</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="degree" class="form-label">DEGREE</label>
+                    <select id="degree" name="degree" class="form-select" required>
+                        <option value="">Select Degree</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="mba">MBA</option>
+                        <option value="mca">MCA</option>
+                        <option value="bpharmacy">B.Pharmacy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="regulation" class="form-label">REGULATION</label>
+                    <select id="regulation" name="regulation" class="form-select" required>
+                        <option value="">Select Regulation</option>
+                        <option value="r22">R22</option>
+                        <option value="r18">R18</option>
+                        <option value="r16">R16</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="calendar_type" class="form-label">CALENDAR TYPE</label>
+                    <select id="calendar_type" name="calendar_type" class="form-select" required>
+                        <option value="">Select Type</option>
+                        <option value="academic">Academic Calendar</option>
+                        <option value="exam">Exam Schedule</option>
+                    </select>
+                </div>
+
+                <button type="button" onclick="downloadCalendar()" class="btn btn-primary btn-full">DOWNLOAD</button>
+            </form>
+
+            <div class="info-note">
+                <strong>Note:</strong> Calendars are fetched from official JNTUH sources. If a specific calendar is not
+                available,
+                please visit <a href="https://studentservices.jntuh.ac.in"
+                    target="_blank">studentservices.jntuh.ac.in</a>
+            </div>
+        </div>
+
+        <div class="quick-links">
+            <h3>QUICK LINKS</h3>
+            <div class="link-list">
+                <a href="https://studentservices.jntuh.ac.in" target="_blank" class="link-item">
+                    <span>JNTUH Student Services</span>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://jntuh.ac.in" target="_blank" class="link-item">
+                    <span>JNTUH Official Website</span>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .calendars-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .calendar-form,
+    .quick-links {
+        background: var(--bg-secondary);
+        border: 1px solid var(--border);
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .calendar-form h3,
+    .quick-links h3 {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .btn-full {
+        grid-column: 1 / -1;
+        margin-top: 1rem;
+    }
+
+    .info-note {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: var(--bg-primary);
+        border-left: 3px solid var(--border);
+        font-size: 13px;
+        color: var(--text-secondary);
+    }
+
+    .info-note a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+
+    .info-note a:hover {
+        text-decoration: underline;
+    }
+
+    .link-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        background: var(--border);
+        border: 1px solid var(--border);
+    }
+
+    .link-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background: var(--bg-secondary);
+        text-decoration: none;
+        color: var(--text-primary);
+        transition: background 0.2s;
+    }
+
+    .link-item:hover {
+        background: var(--bg-primary);
+    }
+
+    .arrow {
+        font-size: 18px;
+        color: var(--text-muted);
+    }
+
+    @media (max-width: 768px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+<script>
+    function downloadCalendar() {
+        const year = document.getElementById('year').value;
+        const degree = document.getElementById('degree').value;
+        const regulation = document.getElementById('regulation').value;
+        const calendarType = document.getElementById('calendar_type').value;
+
+        if (!year || !degree || !regulation || !calendarType) {
+            alert('Please fill in all fields');
+            return;
+        }
+
+        // Redirect to JNTUH student services
+        const url = 'https://studentservices.jntuh.ac.in/oss/syllabus.html?type=calendar';
+        window.open(url, '_blank');
+    }
+</script>
+{% endblock %}
