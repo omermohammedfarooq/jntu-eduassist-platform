@@ -216,3 +216,39 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Environment variables
+.env
+
+# Vector databases
+chroma_db/
+
+# Python cache
+__pycache__/
+
+# Virtual environments
+venv/
+.venv/
+
+# Node modules
+node_modules/
+
+# Mac/Windows junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Build files
+dist/
+build/
