@@ -1,5 +1,3 @@
-# jntu-eduassist-platform
-Multilingual AI-powered academic platform for JNTU students with results integration, AI assistance, practice questions, and community features.
 # JNTU EduAssist Platform
 
 Multilingual AI-powered academic platform for JNTU students with AI assistance, results integration, practice tools, and community features.
