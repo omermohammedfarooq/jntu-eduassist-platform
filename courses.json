@@ -1,0 +1,1701 @@
+{
+  "courses": {
+    "btech": {
+      "name": "B.Tech",
+      "duration": "4 years",
+      "branches": {
+        "ae": {
+          "name": "Aeronautical Engineering",
+          "abbreviation": "AE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "ce": {
+          "name": "Civil Engineering",
+          "abbreviation": "CE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cse": {
+          "name": "Computer Science & Engineering",
+          "abbreviation": "CSE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {
+                    "python_programming": {
+                      "name": "Python Programming",
+                      "code": "CS101",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "variables",
+                        "data_types",
+                        "operators",
+                        "loops",
+                        "functions",
+                        "oop",
+                        "file_handling",
+                        "exceptions",
+                        "modules",
+                        "lists",
+                        "dictionaries",
+                        "tuples",
+                        "strings"
+                      ]
+                    },
+                    "mathematics_1": {
+                      "name": "Mathematics-I",
+                      "code": "MA101",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "matrices",
+                        "differential_equations",
+                        "calculus",
+                        "integration",
+                        "limits"
+                      ]
+                    }
+                  }
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {
+                    "data_structures": {
+                      "name": "Data Structures",
+                      "code": "CS102",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "arrays",
+                        "linked_lists",
+                        "stacks",
+                        "queues",
+                        "trees",
+                        "graphs",
+                        "sorting",
+                        "searching"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {
+                    "dbms": {
+                      "name": "Database Management Systems",
+                      "code": "CS201",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "sql",
+                        "normalization",
+                        "er_diagrams",
+                        "transactions",
+                        "indexing"
+                      ]
+                    }
+                  }
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {
+                    "operating_systems": {
+                      "name": "Operating Systems",
+                      "code": "CS202",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "processes",
+                        "threads",
+                        "memory_management",
+                        "file_systems",
+                        "deadlocks"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {
+                    "machine_learning": {
+                      "name": "Machine Learning",
+                      "code": "CS301",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "regression",
+                        "classification",
+                        "clustering",
+                        "neural_networks",
+                        "deep_learning"
+                      ]
+                    }
+                  }
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {
+                    "computer_networks": {
+                      "name": "Computer Networks",
+                      "code": "CS302",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "osi_model",
+                        "tcp_ip",
+                        "routing",
+                        "switching",
+                        "network_security"
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cse_aiml": {
+          "name": "CSE (AI & ML)",
+          "abbreviation": "CSE-AIML",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cse_ds": {
+          "name": "CSE (Data Science)",
+          "abbreviation": "CSE-DS",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cse_cybersec": {
+          "name": "CSE (Cyber Security)",
+          "abbreviation": "CSE-CS",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "eee": {
+          "name": "Electrical & Electronics Engineering",
+          "abbreviation": "EEE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "ece": {
+          "name": "Electronics & Communication Engineering",
+          "abbreviation": "ECE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "eie": {
+          "name": "Electronics & Instrumentation Engineering",
+          "abbreviation": "EIE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "ete": {
+          "name": "Electronics & Telematics Engineering",
+          "abbreviation": "ETE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "it": {
+          "name": "Information Technology",
+          "abbreviation": "IT",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "ite": {
+          "name": "Information Technology Engineering",
+          "abbreviation": "ITE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "me": {
+          "name": "Mechanical Engineering",
+          "abbreviation": "ME",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "aiml": {
+          "name": "Artificial Intelligence & Machine Learning",
+          "abbreviation": "AI&ML",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "ds": {
+          "name": "Data Science",
+          "abbreviation": "DS",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cse_cs": {
+          "name": "CSE (Cyber Security)",
+          "abbreviation": "CSE-CS",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "chemical": {
+          "name": "Chemical Engineering",
+          "abbreviation": "CHE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mtech": {
+      "name": "M.Tech",
+      "duration": "2 years",
+      "branches": {
+        "cse": {
+          "name": "Computer Science & Engineering",
+          "abbreviation": "CSE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "vlsi": {
+          "name": "VLSI System Design",
+          "abbreviation": "VLSI",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "se": {
+          "name": "Software Engineering",
+          "abbreviation": "SE",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "cn": {
+          "name": "Computer Networks",
+          "abbreviation": "CN",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mba": {
+      "name": "MBA",
+      "duration": "2 years",
+      "branches": {
+        "general": {
+          "name": "General Management",
+          "abbreviation": "GM",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "finance": {
+          "name": "Finance",
+          "abbreviation": "FIN",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "hr": {
+          "name": "Human Resources",
+          "abbreviation": "HR",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "marketing": {
+          "name": "Marketing",
+          "abbreviation": "MKT",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mca": {
+      "name": "MCA",
+      "duration": "3 years",
+      "branches": {
+        "mca": {
+          "name": "Master of Computer Applications",
+          "abbreviation": "MCA",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "bpharmacy": {
+      "name": "B.Pharmacy",
+      "duration": "4 years",
+      "branches": {
+        "pharmacy": {
+          "name": "Pharmacy",
+          "abbreviation": "BPHARM",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {
+                    "pharmaceutics_1": {
+                      "name": "Pharmaceutics-I",
+                      "code": "BP101",
+                      "syllabus_link": "#",
+                      "notes_link": "#",
+                      "previous_papers_link": "#",
+                      "topics": [
+                        "prescription",
+                        "dosage_forms",
+                        "pharmaceutical_calculations",
+                        "solutions",
+                        "suspensions"
+                      ]
+                    }
+                  }
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "mpharmacy": {
+      "name": "M.Pharmacy",
+      "duration": "2 years",
+      "branches": {
+        "pharmaceutics": {
+          "name": "Pharmaceutics",
+          "abbreviation": "PHARM",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "pharmacology": {
+          "name": "Pharmacology",
+          "abbreviation": "PCOL",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        },
+        "pharma_chemistry": {
+          "name": "Pharmaceutical Chemistry",
+          "abbreviation": "PCHEM",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pharmd": {
+      "name": "Pharm.D",
+      "duration": "6 years",
+      "branches": {
+        "pharmd": {
+          "name": "Doctor of Pharmacy",
+          "abbreviation": "PHARMD",
+          "years": {
+            "year1": {
+              "name": "1st Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year2": {
+              "name": "2nd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year3": {
+              "name": "3rd Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year4": {
+              "name": "4th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year5": {
+              "name": "5th Year",
+              "semesters": {
+                "sem1": {
+                  "name": "Semester 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Semester 2",
+                  "subjects": {}
+                }
+              }
+            },
+            "year6": {
+              "name": "6th Year (Internship)",
+              "semesters": {
+                "sem1": {
+                  "name": "Internship Phase 1",
+                  "subjects": {}
+                },
+                "sem2": {
+                  "name": "Internship Phase 2",
+                  "subjects": {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

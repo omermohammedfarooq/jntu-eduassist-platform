@@ -1,0 +1,21 @@
+# Render.com deployment configuration
+# See: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: jntu-eduassist
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: SECRET_KEY
+        generateValue: true
+      # Add these manually in Render Dashboard:
+      # - OPENROUTER_API_KEY
+      # - MAIL_SERVER
+      # - MAIL_PORT
+      # - MAIL_USE_TLS
+      # - MAIL_USERNAME
+      # - MAIL_PASSWORD

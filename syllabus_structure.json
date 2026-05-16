@@ -1,0 +1,81 @@
+{
+    "btech": {
+        "name": "B.Tech",
+        "regulations": {
+            "r22": {
+                "name": "R22",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year",
+                    "3": "3rd Year",
+                    "4": "4th Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=1.B.Tech&l123=1&type=syllabus"
+            },
+            "r18": {
+                "name": "R18",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year",
+                    "3": "3rd Year",
+                    "4": "4th Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=1.B.Tech&l123=1&type=syllabus"
+            }
+        }
+    },
+    "mtech": {
+        "name": "M.Tech",
+        "regulations": {
+            "r22": {
+                "name": "R22",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=3.M.Tech&l123=1&type=syllabus"
+            }
+        }
+    },
+    "mba": {
+        "name": "MBA",
+        "regulations": {
+            "r22": {
+                "name": "R22",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=5.MBA&l123=1&type=syllabus"
+            }
+        }
+    },
+    "mca": {
+        "name": "MCA",
+        "regulations": {
+            "r22": {
+                "name": "R22",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=6.MCA&l123=1&type=syllabus"
+            }
+        }
+    },
+    "bpharmacy": {
+        "name": "B.Pharmacy",
+        "regulations": {
+            "r22": {
+                "name": "R22",
+                "years": {
+                    "1": "1st Year",
+                    "2": "2nd Year",
+                    "3": "3rd Year",
+                    "4": "4th Year"
+                },
+                "baseUrl": "https://studentservices.jntuh.ac.in/oss/syllabus_action.html?level=2.B.Pharmacy&l123=1&type=syllabus"
+            }
+        }
+    }
+}
