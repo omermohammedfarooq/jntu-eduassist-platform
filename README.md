@@ -1,23 +1,32 @@
 # JNTU EduAssist Platform
 
-Multilingual AI-powered academic platform for JNTU students with AI assistance, results integration, practice tools, and community features.
+Multilingual AI-powered academic platform for JNTU students featuring AI assistance, academic services integration, discussion forums, practice systems, and multilingual learning support.
 
 ---
 
 ## Overview
 
-JNTU EduAssist Platform is a student-focused educational platform designed to simplify academic workflows for JNTU students using modern AI systems and integrated academic services.
+JNTU EduAssist Platform is an AI-powered educational ecosystem designed to simplify academic workflows for JNTU students.
 
 The platform combines:
-
 - AI-powered academic assistance
-- Direct JNTU results lookup
+- Direct JNTU results integration
 - Practice question generation
-- Academic resources access
-- Student discussion forum
+- Academic calendar access
+- Syllabus and resource downloads
+- Student discussion forums
 - Multilingual learning support
 
 into one centralized platform.
+
+---
+
+# Live Demo
+
+🚀 Live Website:  
+```txt
+https://jntu-eduassist-production.up.railway.app/
+```
 
 ---
 
@@ -25,7 +34,7 @@ into one centralized platform.
 
 ## AI Academic Assistant
 
-Students can ask academic questions and receive instant answers using multiple AI models.
+Students can ask academic questions and receive instant responses using multiple AI models.
 
 ### Supported Models
 - Qwen
@@ -34,66 +43,117 @@ Students can ask academic questions and receive instant answers using multiple A
 - Groq Mixtral
 - KAT-Coder
 
-The platform allows students to choose different AI models depending on their learning or coding needs.
+The platform allows users to choose different models depending on coding, academic, or conversational needs.
 
 ---
 
 ## JNTU Results Integration
 
-The platform can fetch academic results directly from JNTU servers using APIs for faster and easier access.
+Fetch academic results directly from JNTU servers using integrated APIs.
 
 ### Features
-- Quick results lookup
+- Quick result lookup
 - Simplified access workflow
+- Faster academic access
 - Integrated directly into the platform
 
 ---
 
-## Practice Questions
+## Practice Question Generator
 
-Students can generate practice questions for different subjects to prepare for examinations and improve understanding.
+Generate practice questions to improve preparation and self-assessment.
 
 ### Includes
-- Subject-wise practice
+- Subject-wise questions
+- Exam preparation support
 - Revision assistance
-- Self-assessment support
+- Self-assessment workflows
 
 ---
 
 ## Student Discussion Forum
 
-A built-in student community platform where users can interact and collaborate academically.
+A built-in academic social platform where students can interact and collaborate.
 
 ### Forum Features
-- User accounts and authentication
+- User authentication
 - Create posts
 - Comment on discussions
 - Like and share posts
 - Follow and unfollow users
-- Community interaction and collaboration
-
-The forum is designed as a student-focused academic social platform.
+- Academic collaboration
 
 ---
 
-## Academic Calendar Access
+## Academic Calendars
 
-Students can access official academic calendars directly through the platform.
+Students can directly access official JNTU academic calendars from within the platform.
 
 ---
 
-## Syllabus and Question Papers
+## Syllabus & Resources
 
-The platform provides access to:
-- Syllabus resources
+The platform provides:
+- Syllabus downloads
 - Previous year question papers
-- Official JNTU PDF links
+- Official JNTU PDF resources
+- Academic materials access
 
 ---
 
 ## Multilingual Support
 
-Students can interact with the platform in multiple languages for a more accessible learning experience.
+Students can interact with the platform in multiple languages for improved accessibility and learning experience.
+
+---
+
+# Screenshots
+
+## Home Dashboard (Light Mode)
+
+![Home Dashboard](assets/Screenshots/Home_1_Lightmode.png)
+
+---
+
+## Home Dashboard (Dark Mode)
+
+![Home Dashboard Dark](assets/Screenshots/Home_1_Darkmode.png)
+
+---
+
+## AI Assistant
+
+![AI Assistant](assets/Screenshots/AI_chat.png)
+
+---
+
+## Practice Questions
+
+![Practice Questions](assets/Screenshots/Practice_questions.png)
+
+---
+
+## Discussion Forum
+
+![Discussion Forum](assets/Screenshots/Forum_Home.png)
+
+---
+
+## Results Integration
+
+![Results](assets/Screenshots/Results_1.png)
+
+---
+
+## Academic Calendars
+
+![Academic Calendars](assets/Screenshots/Academic_Calandars.png)
+
+---
+
+## Syllabus Downloads
+
+![Syllabus Downloads](assets/Screenshots/Syllabus_Download.png)
 
 ---
 
@@ -124,34 +184,22 @@ Students can interact with the platform in multiple languages for a more accessi
 
 ```txt
 jntu-eduassist-platform/
-├── .streamlit/
+│
 ├── assets/
-├── backend/
+│   └── Screenshots/
+│
+├── eduassist/
 ├── static/
 ├── templates/
+│
 ├── app.py
 ├── main.py
 ├── embedding_service.py
 ├── requirements.txt
 ├── pyproject.toml
+├── render.yaml
 └── README.md
 ```
-
----
-
-# Screenshots
-
-## Home Page
-_Add homepage screenshot here_
-
-## AI Assistant
-_Add AI assistant screenshot here_
-
-## Practice Questions
-_Add practice questions screenshot here_
-
-## Discussion Forum
-_Add discussion forum screenshot here_
 
 ---
 
@@ -160,7 +208,7 @@ _Add discussion forum screenshot here_
 ## Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/jntu-eduassist-platform.git
+git clone https://github.com/omermohammedfarooq/jntu-eduassist-platform.git
 cd jntu-eduassist-platform
 ```
 
@@ -202,30 +250,30 @@ SECRET_KEY=
 - Voice input support
 - Personalized dashboards
 - Better multilingual support
-- Notifications and reminders
 - AI-generated study plans
-- Improved syllabus integration
+- Advanced syllabus integration
 - Mobile responsiveness improvements
+- Student analytics dashboard
 
 ---
 
 # Vision
 
-The goal of this project is to create a centralized AI-powered academic ecosystem for JNTU students where they can:
+The goal of this project is to build a centralized AI-powered academic ecosystem for JNTU students where they can:
 
-- access academic resources
-- ask questions instantly
-- prepare for exams
-- connect with peers
-- simplify academic workflows
+- Access academic resources
+- Ask questions instantly
+- Prepare for examinations
+- Collaborate with peers
+- Simplify academic workflows
 
-through a single platform.
+through a single unified platform.
 
 ---
 
 # Status
 
-This project is actively under development.
+🚧 This project is actively under development.
 
 ---
 
